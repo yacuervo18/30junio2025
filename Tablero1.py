@@ -37,7 +37,7 @@ with steps[0]:
               delta=str(np.mean(id1['Impresiones']))+'Número de rebotes', 
               delta_color='inverse')
     
-    with steps[1]:
+with steps[1]:
     df = pd.read_csv("https://raw.githubusercontent.com/diplomado-bigdata-machinelearning-udea/Curso1/master/s03/dataVentas2009.csv")
     df.Fecha=pd.to_datetime(df.Fecha, format='%d/%m/%Y')
     df.set_index('Fecha', inplace=True)
